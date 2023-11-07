@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/initialize.css">
+    <link rel="stylesheet" href="static/style.css">
+    <title>zoro</title>
+</head>
+<body>
+    <section class="first second third fourth fifth">
+        {% include 'partiels/navbar.html' %}
+        <div class="left-right">
+            {% include 'partiels/menu.html' %}
+
+            {% block content %}{% endblock %}
+        </div>
+    </section>
+</body>
+</html>

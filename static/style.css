@@ -1,0 +1,503 @@
+body
+{
+    width: 100%;
+}
+header
+{
+    height: 100px;
+    width: 100%;
+}
+.first
+{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.zoro-center
+{
+    width: 100%;
+    height: 10%;
+    background-color: #5b9bd5;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid rgb(61, 61, 61) 1px; */
+}
+.grey
+{
+    width: 100%;
+    height: 80%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* border-bottom: solid rgb(61, 61, 61) 1px; */
+}
+.sign_in
+{
+    width: 30%;
+    height: 70%;
+    border-radius: 40px;
+    border: 1px solid rgb(0, 0, 104);
+    background-color: #5b9bd5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8%;
+}
+.sign_in h6
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+.sign_in .btn1, .sign_in .btn2
+{
+    width: 60%;
+    height: 10%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.sign_in .btn1::placeholder, .sign_in .btn2::placeholder
+{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+.sign_in .btn3
+{
+    width: 35%;
+    height: 15%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 5px;
+    border: solid black 1px;
+    text-align: center;
+}
+.sign_in .btn3 a
+{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.sign_in a
+{
+    color: white;
+    font-size: 16px;
+}
+.second
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.second .zoro-left
+{
+    width: 100%;
+    height: 10%;
+    background-color: #5b9bd5;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid rgb(61, 61, 61) 1px; */
+}
+.left-right
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border-bottom: solid rgb(61, 61, 61) 1px; */
+}
+.left
+{
+    width: 15%;
+    height: 100%;
+    background-color: #5b9bd5;
+    padding-top: 30px;
+}
+.left div
+{
+    width: 100%;
+    height: 5%;
+    background-color: white;
+    border: solid rgb(41, 41, 41) 1px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.left div a
+{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.right
+{
+    width: 85%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-left: solid rgb(61, 61, 61) 1px;
+}
+.mag
+{
+  background-color: gray !important;  
+}
+.mag a
+{
+  color: white !important;  
+}
+.third
+{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.third .left-right .droite
+{
+    width: 85%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-left: solid rgb(61, 61, 61) 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third .left-right .droite .div-center
+{
+    height: 90%;
+    width: 90%;
+    padding-left: 20px;
+}
+.btn6
+{
+    font-size: 20px;
+    text-decoration: none;
+    border: solid blue 1px;
+    background-color: #70ad47;
+    color: white;
+    border-radius: 5px;
+    text-align: center; 
+    padding: 10px 30px;
+    margin: 0;
+}
+.third .left-right .droite .div-center>div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.third .left-right .droite p
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.tableau
+{
+    width: 97%;
+    height: 60%;
+    align-items: center;
+}
+.tableau table
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.tableau table tr th
+{
+    color: white;
+    border: solid white 1px;
+    border-bottom: solid white 2px;
+    background-color: #5b9bd5;
+    text-align: center;
+}
+.tableau table td
+{
+    border: 1px solid white;
+}
+
+.tableau table tr:nth-child(odd) 
+{
+    background-color: rgb(196, 218, 248);
+}
+.tableau table tr:nth-child(even) 
+{
+    background-color: rgb(171, 194, 220);
+}
+.btn-row
+{
+    /* width:  100%;
+    height: 20%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: solid rgb(41, 41, 41) 1px; */
+    margin: 0;
+}
+.btn4-row
+{
+    color: white;
+    /* border: solid rgb(0, 103, 144) 1.5px; */
+    border: transparent;
+    background-color: #ffc000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn5-row
+{
+    color: white;
+    /* border: solid rgb(0, 103, 144) 1.5px; */
+    border: transparent;
+    background-color: #ff0000;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+.btn4-row a,
+.btn5-row a
+{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.fourth
+{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fourth .right
+{
+    display: flex ;
+    flex-direction: column ;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.fourth .right .right-center-pop
+{
+    height: 85%;
+    width: 90%;
+    /* border: solid rgb(41, 41, 41) 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    margin: 0;
+}
+.fourth .right .right-center-pop p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.fourth .right .right-center-pop .pop-up
+{
+    height: 50%;
+    width: 100%;
+    /* border: solid rgb(41, 41, 41) 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fourth .right .right-center-pop .pop-up p
+{
+    height: 60%;
+    width: 70%;
+    font-weight: 100;
+    font-size: 18px;
+    border: solid rgb(0, 103, 144) 1.5px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background-color: #f8cbad;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.fourth .right .right-center
+{
+    height: 85%;
+    width: 70%;
+    /* border: solid rgb(41, 41, 41) 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    margin: 0;
+}
+.fourth .right .right-center p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.fourth .right .right-center .form
+{
+    height: 80%;
+    width: 90%;
+    /* border: solid rgb(41, 41, 41) 1px; */
+}
+.fourth .right .right-center .form form
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    /* border: solid rgb(41, 41, 41) 1px; */
+}
+.fourth .right .right-center .form form .row
+{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid rgb(41, 41, 41) 1px; */
+}
+.fourth .right .right-center .form form .row > label
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.fourth .right .right-center .form form .row label + input
+{
+    width: 75%;
+    height: 60%;
+    border-radius: 5px;
+    border: solid #5b9bd5 1.5px;
+}
+/* .fourth .right .right-center .form form .row #value::placeholder
+{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.fourth .right .right-center .form form .row:nth-child(3) #value::placeholder
+{
+    text-align: center;
+    color: #70ad47;
+    font-size: 20px;
+} */
+.btn
+{
+    width:  100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: solid rgb(41, 41, 41) 1px; */
+}
+.btn4
+{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    height: 50%;
+    border: solid rgb(0, 103, 144) 1.5px;
+    background-color: red;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn5
+{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    height: 50%;
+    border: solid rgb(0, 103, 144) 1.5px;
+    background-color: #70ad47;
+    border-radius: 5px;
+    text-align: center;   
+    margin-left: 10px; 
+}
+.btn4 a,
+.btn5 a
+{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.fifth
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fifth .droite
+{
+    width: 85%;
+    height: 100%;
+    background-color: #d9d9d9;
+    /* border-left: solid rgb(61, 61, 61) 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fifth .droite .droite-center
+{
+    height: 90%;
+    width: 90%;
+    /* border: solid rgb(61, 61, 61) 1px; */
+    padding-left: 50px;
+}
+.fifth .droite .droite-center>div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.fifth .droite .droite-center p
+{
+    width: 45%;
+    font-size: 17px;
+    background-color: #e2f0d9;
+    border: solid rgb(0, 103, 144) 1.5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+.new
+{
+    color: #70ad47 !important;
+}
