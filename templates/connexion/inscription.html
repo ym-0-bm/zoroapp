@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='initialize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Zoro</title>
+</head>
+<body>
+    <section class="first second third fourth fifth">
+        <div class="sign">
+            <div class="right">
+                <div class="right-center">
+                    <div class="head">
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                    </div>
+                    <p>Inscription</p>
+
+                    <div class="form">
+                        <form method="POST">
+                            <div class="row">
+                                <label for="NomUser">Nom d'utilisateur</label>
+                                <input type="text" id="NomUser" name="nomuser" placeholder="Nom d'utilisateur" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="Email">E-mail</label>
+                                <input type="email" id="Email" name="mail" placeholder="E-mail" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="Password">Mot de passe</label>
+                                <input type="password" id="Password" name="password" placeholder="Mot de passe" required>
+                            </div>
+
+                            <div class="row">
+                                <!-- <label for="ConfirmPassword">Confirm</label>
+                                <input type="password" id="ConfirmPassword" name="confirmpassword" placeholder="Confirm mot de passe" required> -->
+                            </div>
+
+
+                            <div class="btn">
+                                <button class="btn4"><a href="/connexion">Retour</a></button>
+                                <button type="submit" class="btn5">Valider</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

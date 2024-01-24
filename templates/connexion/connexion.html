@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/initialize.css">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="first">
+        <div class="zoro-center">Zoro</div>
+
+        <div class="grey">
+            <div class="head">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+            </div>
+            <form method="post" class="sign_in">
+                <h6>Connectez-vous</h6>
+                <input class="btn1" name="identifiant" placeholder="Nom d'utilisateur/Email" required>
+                <input class="btn2" type="password" name="password" placeholder="Entrez votre mot de passe" required>
+                <button type="submit" class="btn3">Connexion</button>
+                <a href="/inscription">si pas de compte, inscrivez-vous</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

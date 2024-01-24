@@ -1,0 +1,37 @@
+{% extends"base.html" %}
+{% block content %}
+    <div class="right">
+        <div class="right-center">
+            <p>Ajouter un nouveau magasin</p>
+
+            <div class="form">
+                <form method="POST">
+                    <div class="row">
+                        <label for="Nom">Nom:</label>
+                        <input type="text" id="Nom" name="nom" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Adresse">Adresse:</label>
+                        <input type="text" id="Adresse" name="adresse" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Telephone">Téléphone:</label>
+                        <input type="text" id="Telephone" name="telephone" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Email">E-mail:</label>
+                        <input type="text" id="Email" name="email" required>
+                    </div>
+
+                    <div class="btn">
+                        <button class="btn4"><a href="/affichermagasin">Retour</a></button>
+                        <button type="submit" class="btn5">Valider</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

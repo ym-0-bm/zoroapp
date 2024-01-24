@@ -1,0 +1,20 @@
+{% extends"base.html" %}
+{% block content %}
+    <div class="right">
+        <div class="right-center-pop">
+            <p>Suppression de vente</p>
+
+            <div class="pop-up">
+                <p>
+                    Vous êtes sur le point de supprimer la vente N°{{data[0]}}. <br>
+                    Êtes-vous sûr de vouloir continuer ?
+                </p>
+            </div>
+
+            <div class="btn">
+                <button class="btn4"><a href="/afficherstock">Retour</a></button>
+                <button class="btn5"><a href="{{url_for('supprimervente', item_id=data[0])}}">Valider</a></button>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

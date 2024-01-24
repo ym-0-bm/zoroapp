@@ -1,0 +1,48 @@
+{% extends"base.html" %}
+{% block content %}
+    <div class="right">
+        <div class="right-center">
+            <p>Ajouter un stock</p>
+
+            <div class="form">
+                <form method="POST">
+                    <div class="row">
+                        <label for="NomProduit">Nom Produit:</label>
+                        <select name="nomproduit" id="NomProduit">
+                            {% for prod in prods %}
+                                <option value="{{prod.0}}" selected>{{prod.1}}</option>
+                            {% endfor %}
+                        </select>
+                        <!-- <input type="text" id="Nom" name="nom" required> -->
+                    </div>
+
+                    <div class="row">
+                        <label for="NomMagasin">Nom Magasin:</label>
+                        <select name="nommagasin" id="NomMagasin">
+                            {% for mag in mags %}
+                                <option value="{{mag.0}}" selected>{{mag.1}}</option>
+                            {% endfor %}
+                        </select>
+                        <!-- <input type="text" id="Categorie" name="categorie" required> -->
+                    </div>
+
+                    <div class="row">
+                        <label for="Quantite">Quantité</label>
+                        <input type="number" id="Quantite" name="quantite" placeholder="Quantité en stock" min="0" required>
+                    </div>
+
+                    <div class="row">
+                        <!-- <label for="PrixUnitaire">PrixUnitaire:</label>
+                        <input type="text" id="PrixUnitaire" name="prixunitaire" required> -->
+                    </div>
+
+
+                    <div class="btn">
+                        <button class="btn4"><a href="/afficherstock">Retour</a></button>
+                        <button type="submit" class="btn5">Valider</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

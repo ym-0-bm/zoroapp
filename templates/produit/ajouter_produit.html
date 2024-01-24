@@ -1,0 +1,38 @@
+{% extends"base.html" %}
+{% block content %}
+    <div class="right">
+        <div class="right-center">
+            <p>Ajouter un nouveau produit</p>
+
+            <div class="form">
+                <form method="POST">
+                    <div class="row">
+                        <label for="Nom">Nom:</label>
+                        <input type="text" id="Nom" name="nom" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="Categorie">Categorie:</label>
+                        <input type="text" id="Categorie" name="categorie" required>
+                    </div>
+
+
+                    <div class="row">
+                        <label for="PrixUnitaire">PrixUnitaire:</label>
+                        <input type="text" id="PrixUnitaire" name="prixunitaire" min="1" required>
+                    </div>
+
+                    <div class="row">
+                        <!-- <label for="StockActuel">StockActuel:</label>
+                        <input type="text" id="StockActuel" name="stockactuel" required> -->
+                    </div>
+
+                    <div class="btn">
+                        <button class="btn4"><a href="/afficherproduit">Retour</a></button>
+                        <button type="submit" class="btn5">Valider</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
