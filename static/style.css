@@ -540,3 +540,21 @@ header
 {
     color: #70ad47 !important;
 }
+
+.alert-success {
+    background-color: #dff0d8;
+    border: 1px solid #3c763d;
+    color: #3c763d;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border: 1px solid #a94442;
+    color: #a94442;
+}
+
+.alert-info {
+    background-color: #dee2f2;
+    border: 1px solid #000D82;
+    color: #000D82;
+}
